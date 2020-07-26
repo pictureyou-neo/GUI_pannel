@@ -14,6 +14,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 
+# This is comment for git test
+
 # Serial msg constant
 WIN_WIDTH, WIN_HEIGHT = 355, 200  # Window size (original = 684, 400)
 SER_TIMEOUT = 0.1  # Timeout for serial Rx

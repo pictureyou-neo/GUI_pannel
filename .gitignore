@@ -1,3 +1,4 @@
 recording_folder1/
 venv/
 .idea/
+__pycache__/
