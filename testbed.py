@@ -200,6 +200,8 @@ if __name__ == "__main__":
     ui = MyWidget()
     MainWindow.show()
 
+    ui.progressBar.setProperty("value", 70)
+
     sys.exit(app.exec_())
 
 # EOF
