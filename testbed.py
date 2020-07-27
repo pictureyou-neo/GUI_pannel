@@ -190,15 +190,32 @@ class SerialThread(QtCore.QThread):
             self.ser.close()
             self.ser = None
 
+# Thread to handle incoming &amp; outgoing serial data
+class ThreadReadSlider(QtCore.QThread):
+    var = 0
+
+    def __init__(self):
+        self.ThreadRun()
+
+    def ThreadRun(self):
+        while True:
+            print(self.var)
+            self.var +=1
+            time.sleep(1)
+
 
 if __name__ == "__main__":
     import sys
     app = QApplication(sys.argv)
     print("App started")
 
-    MainWindow = QtWidgets.QMainWindow()
-    ui = MyWidget()
-    MainWindow.show()
+    # MainWindow = QtWidgets.QMainWindow()
+    # ui = MyWidget()
+    # MainWindow.show()
+
+    test = ThreadReadSlider()
+
+
 
     ui.progressBar.setProperty("value", 70)
 
