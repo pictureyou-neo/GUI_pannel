@@ -37,6 +37,10 @@ class Ui_MainWindow(object):
         self.widget = matplotlibwidget(self.centralwidget)
         self.widget.setGeometry(QtCore.QRect(20, 20, 571, 401))
         self.widget.setObjectName("widget")
+        self.pushButton_2 = QtWidgets.QPushButton(self.widget)
+        self.pushButton_2.setGeometry(QtCore.QRect(130, 190, 75, 23))
+        self.pushButton_2.setStyleSheet("")
+        self.pushButton_2.setObjectName("pushButton_2")
         self.verticalSlider_0 = QtWidgets.QSlider(self.centralwidget)
         self.verticalSlider_0.setGeometry(QtCore.QRect(620, 20, 22, 361))
         self.verticalSlider_0.setMaximum(100)
@@ -65,6 +69,7 @@ class Ui_MainWindow(object):
         self.progressBar.setGeometry(QtCore.QRect(620, 400, 151, 21))
         self.progressBar.setStatusTip("")
         self.progressBar.setProperty("value", 50)
+        self.progressBar.setAlignment(QtCore.Qt.AlignCenter)
         self.progressBar.setTextVisible(True)
         self.progressBar.setOrientation(QtCore.Qt.Horizontal)
         self.progressBar.setInvertedAppearance(False)
@@ -90,6 +95,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "NEO_GUI_pannel V0.2"))
         self.groupBox.setTitle(_translate("MainWindow", "Serial baud rate = 115,200"))
         self.pushButton.setText(_translate("MainWindow", "Connect"))
+        self.pushButton_2.setText(_translate("MainWindow", "PushButton"))
         self.progressBar.setFormat(_translate("MainWindow", "%p%"))
 
 from testbed import matplotlibwidget
